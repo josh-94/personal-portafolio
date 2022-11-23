@@ -9,6 +9,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nodemailer": "^6.8.0",
     "react": "^18.2.0",
@@ -47,6 +48,8 @@
     ]
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/nodemailer": "^6.4.6",
     "@types/react-mailchimp-subscribe": "^2.1.1"
   }
 }
