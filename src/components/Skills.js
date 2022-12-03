@@ -36,23 +36,31 @@ export const Skills = () => {
                         <h2>
                             Skills
                         </h2>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Currently working and learning the STACK MongoDB, React JS, Express JS and Node JS (MERN) with different web projects. I'm a user centered web developer, and I love putting the user first!   </p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Web" />
-                                <h5>Web Development</h5>
+                                <img src={meter1} alt="HTML" />
+                                <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Brand" />
-                                <h5>Brand Identity</h5>
+                                <img src={meter1} alt="CSS" />
+                                <h5>CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Logo" />
-                                <h5>Logo Design</h5>
+                                <img src={meter3} alt="JavaScript" />
+                                <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Programming" />
-                                <h5>Programming</h5>
+                                <img src={meter2} alt="React JS" />
+                                <h5>React JS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Node.js" />
+                                <h5>Node.js</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Mongo DB" />
+                                <h5>Mongo DB</h5>
                             </div>
                         </Carousel>
                     </div>

@@ -1,4 +1,4 @@
-echo "Swirching ro branch master"
+echo "Switching to branch master"
 git checkout master
 
 echo "Building app..."

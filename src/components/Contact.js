@@ -32,7 +32,7 @@ export const Contact = () => {
         "Content-Type": "Application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
-    });
+    }).catch((error) => {console.log(error)} ); 
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
