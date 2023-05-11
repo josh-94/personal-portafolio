@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,32 +39,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Scripts to Deploy on Remote Server using Nginx and installing a SSL certificate
+Previouly configure your shh public key local machine into remote server
+https://developers.redhat.com/blog/2018/11/02/how-to-manually-copy-ssh-keys-rhel![image]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+and configure your DNS cname record
+### `An A record with example.com pointing to your server’s public IP address.`
+### `An A record with www.example.com pointing to your server’s public IP address.`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Git clone the following repository on local machine
+### `.git clone https://github.com/josh-94/personal-portafolio.git`
 
-### Code Splitting
+##Send configuration files to remote server
+### `chmod +x sendConfigFilestoServer.sh`
+### `./sendConfigFilestoServer.sh`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Login as root user in the remote server an execute the following script to create a new user 'ubuntu'
+### `chmod +x 1.configNewServer.sh 2.configNgnix.sh 3.configSSL.sh deploy.sh`
+### `./1.configNewServer.sh`
 
-### Analyzing the Bundle Size
+Logout as root user and login as new user 'ubuntu' in the remote server, then execute the following scripts to configure Nginx and add a SSL certificate
+### `2.configNgnix.sh`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+On local machine, deploy the project executable file
+### `deploy.sh`
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Finally install SSL certificate on server
+### `3.configSSL.sh`
