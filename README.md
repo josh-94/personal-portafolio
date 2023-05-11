@@ -44,8 +44,8 @@ Previouly configure your shh public key local machine into remote server
 https://developers.redhat.com/blog/2018/11/02/how-to-manually-copy-ssh-keys-rhel![image]
 
 and configure your DNS cname record
-# An A record with `example.com` pointing to your server’s public IP address.
-# An A record with `www.example.com` pointing to your server’s public IP address.
+ An A record with `example.com` pointing to your server’s public IP address.
+ An A record with `www.example.com` pointing to your server’s public IP address.
 
 Git clone the following repository on local machine
 ### `.git clone https://github.com/josh-94/personal-portafolio.git`
