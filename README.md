@@ -40,10 +40,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Scripts to Deploy on Remote Server using Nginx and installing a SSL certificate
-###Previouly configure your shh public key local machine into remote server
+### Previouly configure your shh public key local machine into remote server
 https://developers.redhat.com/blog/2018/11/02/how-to-manually-copy-ssh-keys-rhel![image]
 
-###Configure your DNS cname record
+### Configure your DNS cname record
 
 An A record with `example.com` pointing to your server’s public IP address.
 An A record with `www.example.com` pointing to your server’s public IP address.
@@ -51,7 +51,7 @@ An A record with `www.example.com` pointing to your server’s public IP address
 Git clone the following repository on local machine
 ### `.git clone https://github.com/josh-94/personal-portafolio.git`
 
-##Send configuration files to remote server
+## Send configuration files to remote server
 ### `chmod +x sendConfigFilestoServer.sh`
 ### `./sendConfigFilestoServer.sh`
 
