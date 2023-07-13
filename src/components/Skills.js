@@ -37,7 +37,7 @@ export const Skills = () => {
                             Skills
                         </h2>
                         <p> I'm a Full Stack Web Developer, passionate about creating
-                            exceptional user experiences. With solid knowledge in HTML5, CSS3, JavaScript, Python and MySQL. I have experience creating web applications with frameworks like ReactJS in front-end and Flask for RESTful API in the back-end. I am committed to the development of modern and functional user interfaces.
+                            exceptional user experiences. With solid knowledge in HTML5, CSS3, JavaScript, Python and MySQL. I have experience creating web applications with frameworks like React JS in the front-end and Flask for RESTful API in the back-end. I am committed to the development of modern and functional user interfaces.
                             I'm a user centered web developer, and I love putting the user first!  </p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
