@@ -36,9 +36,9 @@ export const Skills = () => {
                         <h2>
                             Skills
                         </h2>
-                        <p> I'm a Front-end Web Developer with more than 1 year experience, passionated about creating
-                            exceptional user experiences. With solid knowledge in HTML5, CSS3, JavaScript, React.js and Bootstrap. I am committed to the development of modern and functional user interfaces.
-                            I have a good understanding of back-end programming languages and databases, as for example Python and MySQL</p>
+                        <p> I'm a Full Stack Web Developer, passionate about creating
+                            exceptional user experiences. With solid knowledge in HTML5, CSS3, JavaScript, Python and MySQL. I have experience creating web applications with frameworks like ReactJS in front-end and Flask for RESTful API in the back-end. I am committed to the development of modern and functional user interfaces.
+                            I'm a user centered web developer, and I love putting the user first!  </p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="HTML" />
@@ -56,11 +56,6 @@ export const Skills = () => {
                                 <img src={meter2} alt="React JS" />
                                 <h5>React JS</h5>
                             </div>
-                            <div className="item">
-                                <img src={meter2} alt="Bootstrap" />
-                                <h5>Bootstrap</h5>
-                            </div>
-
                             <div className="item">
                                 <img src={meter2} alt="MySQL" />
                                 <h5>MySQL</h5>
