@@ -36,7 +36,7 @@ sudo ufw delete allow 'Nginx HTTP'
 sudo ufw status
 
 ## Obtaining an SSL Certificate
-sudo certbot --nginx -d codewithjosh.dev -d www.codewithjosh.dev
+sudo certbot --nginx -d codewithjosh.codes -d www.codewithjosh.codes
 
 #Verifying Certbot Auto-Renewal
 sudo systemctl status snap.certbot.renew.service
