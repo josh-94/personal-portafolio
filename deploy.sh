@@ -8,6 +8,6 @@ echo "Building app..."
 npm run build
 
 echo "Deploying files to server..."
-scp -r build/* ubuntu@165.227.203.165:/var/www/codewithjosh/
+scp -r build/* ubuntu@192.81.219.249:/var/www/codewithjosh/
 
 echo "Done!" 
