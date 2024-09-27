@@ -27,7 +27,7 @@ sudo chmod 755 -R /etc/nginx/sites-available/
 #Add user as owner of directory
 sudo chown -R ubuntu:www-data /etc/nginx/sites-available/
 
-sudo echo -e 'server {\n\tlisten 80;\n\tlisten [::]:80;\n\troot /var/www/codewithjosh;\n\tindex index.html;\n\tserver_name codewithjosh.codes www.codewithjosh.codes;\n}' > /etc/nginx/sites-available/codewithjosh/
+sudo echo -e 'server {\n\tlisten 80;\n\tlisten [::]:80;\n\troot /var/www/codewithjosh;\n\tindex index.html;\n\tserver_name codewithjosh.codes www.codewithjosh.codes;\n}' > /etc/nginx/sites-available/codewithjosh
 
 #unlike default file config
 sudo unlink /etc/nginx/sites-enabled/default
