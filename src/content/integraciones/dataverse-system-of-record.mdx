@@ -1,0 +1,24 @@
+---
+title: Dataverse as the system of record
+summary: When the process row is born in Dataverse and other apps look up that row.
+date: 2026-10-08
+tags:
+  - dataverse
+level: intermedio
+technologies:
+  - dataverse
+lang: en
+translationKey: dataverse-record
+draft: false
+systems:
+  - Dataverse
+  - Power Apps
+seoTitle: Dataverse as the system of record
+seoDescription: A pattern for using Dataverse as the system of record for a process.
+---
+
+Reference pattern. It does not describe a client.
+
+Use it when the process has no previous master: the request, the case file, or the status is created in the app. Dataverse security roles decide who can see and who can approve. The table travels in the solution, so DEV, TEST, and PROD share the model.
+
+Do not use it to clone a core system that already has an owner. In that case the link stores the external key and Dataverse stores only the transaction.

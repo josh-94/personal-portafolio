@@ -1,0 +1,44 @@
+---
+title: Dataverse o SQL Server
+summary: Cuándo el dato nuevo vive en Dataverse y cuándo conviene dejarlo en el SQL que la empresa ya opera.
+date: 2026-10-06
+tags:
+  - dataverse
+  - sql-server
+level: intermedio
+technologies:
+  - dataverse
+  - sql-server
+  - gateway
+lang: es
+translationKey: dataverse-sql
+draft: false
+seoTitle: Dataverse o SQL Server
+seoDescription: Criterio para elegir Dataverse o SQL Server en una solución de Power Platform.
+---
+
+import Callout from '../../components/Callout.astro';
+
+La pregunta no es cuál producto es mejor. Es dónde debe vivir el dato para que la aplicación sea simple y el sistema de origen siga siendo la fuente.
+
+## Dataverse, cuando el proceso nace en la plataforma
+
+Tiene sentido si la aplicación es el lugar donde el registro se crea, los permisos siguen el rol de la persona y las relaciones son del proceso (solicitud, aprobación, estado). Dataverse ya entiende seguridad, auditoría y soluciones. El ALM viaja con la tabla.
+
+## SQL Server, cuando el dato ya está ahí
+
+Tiene sentido si el registro maestro vive en SQL, sobre todo si está on-premises y otras aplicaciones ya lo usan. Power Apps puede leerlo y escribir lo que el proceso necesite, a través de un gateway cuando el servidor no está expuesto a internet. Copiar toda la base a Dataverse solo para “tenerla en la nube” duplica el dato y la reconciliación.
+
+<Callout title="El gateway no modela el negocio">
+El gateway abre el camino hasta el servidor. No decide qué tabla es la fuente ni quién puede ver una fila. Eso sigue siendo diseño.
+</Callout>
+
+## Una mezcla que suele funcionar
+
+- El maestro permanece en SQL.
+- Dataverse guarda el expediente del proceso: quién pidió, en qué estado está, qué aprobación falta.
+- Una columna guarda la clave del registro en SQL, no una copia de todas sus columnas.
+
+## Antes de elegir
+
+Pregunta quién corrige un dato si las dos copias no coinciden. Si nadie tiene esa respuesta, todavía no hay que duplicar.

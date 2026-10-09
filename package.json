@@ -1,55 +1,37 @@
 {
   "name": "personal-portafolio",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "animate.css": "^4.1.1",
-    "bootstrap": "^5.2.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "nodemailer": "^6.8.0",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.6.0",
-    "react-bootstrap-icons": "^1.9.1",
-    "react-dom": "^18.2.0",
-    "react-mailchimp-subscribe": "^2.1.3",
-    "react-multi-carousel": "^2.8.2",
-    "react-on-screen": "^2.1.1",
-    "react-router-hash-link": "^2.4.3",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predev": "node scripts/write-brand-svgs.mjs && node scripts/write-feed.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/write-brand-svgs.mjs && node scripts/write-feed.mjs",
+    "build": "next build && pagefind --site out",
+    "preview": "npx --yes serve out",
+    "brand": "node scripts/write-brand-svgs.mjs && node scripts/rasterize-brand.mjs"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.2.6",
+    "@fontsource/outfit": "^5.2.8",
+    "gray-matter": "^4.0.3",
+    "motion": "^12.23.12",
+    "next": "^15.5.4",
+    "next-mdx-remote": "^5.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.12",
-    "@types/nodemailer": "^6.4.6",
-    "@types/react-mailchimp-subscribe": "^2.1.1"
+    "@resvg/resvg-js": "^2.6.2",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "pagefind": "^1.4.0",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.2"
   }
 }

@@ -1,0 +1,46 @@
+---
+title: How to line up DEV, TEST, and PROD with Power Platform Pipelines
+summary: A short path so a solution leaves development, gets tested, and reaches production without being edited there.
+date: 2026-10-01
+tags:
+  - alm
+level: intermedio
+technologies:
+  - alm
+lang: en
+translationKey: pipelines
+draft: false
+seoTitle: DEV, TEST, and PROD with Power Platform Pipelines
+seoDescription: A guide to moving Power Platform solutions through DEV, TEST, and PROD.
+---
+
+import Callout from '../../components/Callout.astro';
+
+A solution that only exists in the environment where it was built gets fragile the day someone patches it in production. Power Platform Pipelines move that solution across three environments and leave a record of what was released.
+
+## Three environments, three jobs
+
+- **DEV.** You build. The solution can stay unmanaged so components can still change.
+- **TEST.** The person who runs the process validates it. The managed solution lands here.
+- **PROD.** People use it. It is not the place to redesign the screen.
+
+<Callout title="The limit">
+The pipeline moves the solution. It does not replace the conversation with the user or a test with data that resembles the real process.
+</Callout>
+
+## Before the first release
+
+1. Your own publisher and prefix, so components are recognizable.
+2. Environment variables for what changes between DEV and PROD: URLs, lists, notification mailboxes.
+3. Connection references, so the flow is not tied to the maker's personal account.
+4. One solution that holds the app, the flow, and the tables that travel together. Leave out anything that should not be promoted.
+
+## When you promote
+
+Install the managed solution in TEST. Walk the whole path: create, approve, fail, and the permission of someone who is not the maker. If TEST holds, the same package continues to PROD.
+
+If something fails in PROD, the fix goes back to DEV and through the pipeline again. Editing the component in PROD breaks the next promotion.
+
+## What to write down
+
+Environment, solution version, date, and what was tested. Then someone else can tell what is in production without opening the designer.

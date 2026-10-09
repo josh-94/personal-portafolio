@@ -1,0 +1,25 @@
+---
+title: Recordatorio programado
+summary: Un flujo que revisa vencimientos en horario fijo y avisa solo lo que sigue abierto.
+date: 2026-10-08
+tags:
+  - power-automate
+level: basico
+technologies:
+  - power-automate
+lang: es
+translationKey: scheduled-reminder
+draft: false
+trigger: Recurrencia diaria, en el horario de la operación.
+connectors:
+  - Schedule
+  - Dataverse, SharePoint o SQL, según dónde esté el vencimiento
+seoTitle: Recordatorio programado
+seoDescription: Patrón de flujo recurrente para avisar vencimientos abiertos.
+---
+
+Patrón de referencia. No describe un cliente.
+
+El disparador es un horario, no un clic. Cada ejecución filtra los registros que vencen y siguen abiertos. El aviso sale una vez por registro. Si el flujo no marca que ya avisó, al día siguiente duplica el correo.
+
+Conviene guardar la última ejecución y el número de avisos. Si el flujo falla un lunes, el martes se nota.

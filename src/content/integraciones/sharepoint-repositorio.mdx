@@ -1,0 +1,24 @@
+---
+title: SharePoint como repositorio de archivos
+summary: SharePoint guarda el documento. Otro sistema guarda el estado del trámite.
+date: 2026-10-08
+tags:
+  - sharepoint
+level: basico
+technologies:
+  - sharepoint
+lang: es
+translationKey: sharepoint-repository
+draft: false
+systems:
+  - SharePoint
+  - Dataverse o SQL
+seoTitle: SharePoint como repositorio
+seoDescription: Patrón para usar SharePoint como repositorio de archivos y no como sistema de registro.
+---
+
+Patrón de referencia. No describe un cliente.
+
+SharePoint es un buen lugar para el archivo: versiones, permisos de biblioteca y un enlace estable. Se vuelve incómodo cuando la lista también intenta ser el expediente, el tablero y la auditoría del proceso.
+
+Deja en la biblioteca el documento y su enlace. Deja en Dataverse, o en el SQL que ya manda, el estado, el responsable y la fecha. El flujo [de un ítem de SharePoint a una fila en Dataverse](/automatizaciones/sharepoint-a-dataverse) muestra ese corte.

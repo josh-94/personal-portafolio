@@ -1,0 +1,30 @@
+---
+title: SQL Server on-premises con gateway
+summary: Cómo llegar a un SQL que no está en internet, sin mudarlo a la nube para poder leerlo.
+date: 2026-10-08
+tags:
+  - sql-server
+  - gateway
+level: intermedio
+technologies:
+  - sql-server
+  - gateway
+  - azure
+lang: es
+translationKey: sql-gateway
+draft: false
+systems:
+  - SQL Server
+  - On-premises data gateway
+  - Power Apps o Power Automate
+seoTitle: SQL Server con gateway
+seoDescription: Patrón para integrar SQL Server on-premises con Power Platform mediante un gateway.
+---
+
+Patrón de referencia. No describe un cliente.
+
+El gateway se instala en la red donde el SQL ya responde. Power Platform habla con el gateway; el gateway habla con el servidor. La base no tiene que publicarse en internet.
+
+Antes de instalarlo, TI necesita saber: en qué servidor queda el gateway, con qué cuenta de servicio lee SQL, qué tabla se consulta y si la escritura está permitida. Un gateway sin dueño se apaga en un parche y la aplicación deja de abrir.
+
+La guía [Dataverse o SQL Server](/guias/dataverse-o-sql-server) ayuda a decidir si el maestro se queda en SQL.

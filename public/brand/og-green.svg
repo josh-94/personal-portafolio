@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="codewithjosh">
+  <rect width="1200" height="630" fill="#0B1F3A"/>
+  <g transform="translate(88 168) scale(4.2)"><path fill="#1D4ED8" d="M9.2 2.75H16.3C20.6 2.75 23.5 6.1 23.5 10V17C23.5 20.9 20.6 24.25 16.3 24.25H9.2C4.9 24.25 2 20.9 2 17V10C2 6.1 4.9 2.75 9.2 2.75z"/><path d="M28 9.5H51V51H15V36" fill="none" stroke="#F8FAFC" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><circle fill="#22C55E" cx="32.5" cy="36.4" r="6.8"/></g>
+  <text x="400" y="292" fill="#F8FAFC" font-family="Outfit" font-size="52" font-weight="600">codewithjosh</text>
+  <text x="88" y="470" fill="#F8FAFC" font-family="Outfit" font-size="42" font-weight="500">Automatiza lo que sigue.</text>
+  <text x="88" y="530" fill="#F8FAFC" font-family="Outfit" font-size="42" font-weight="500">Conecta lo que <tspan fill="#22C55E">importa.</tspan></text>
+  <text x="88" y="582" fill="#E0F2FE" font-family="IBM Plex Mono" font-size="22">codewithjosh.codes</text>
+</svg>

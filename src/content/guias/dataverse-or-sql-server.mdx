@@ -1,0 +1,44 @@
+---
+title: Dataverse or SQL Server
+summary: When new data belongs in Dataverse, and when it should stay in the SQL Server the company already runs.
+date: 2026-10-06
+tags:
+  - dataverse
+  - sql-server
+level: intermedio
+technologies:
+  - dataverse
+  - sql-server
+  - gateway
+lang: en
+translationKey: dataverse-sql
+draft: false
+seoTitle: Dataverse or SQL Server
+seoDescription: How to choose Dataverse or SQL Server in a Power Platform solution.
+---
+
+import Callout from '../../components/Callout.astro';
+
+The question is not which product is better. It is where the data should live so the app stays simple and the source system remains the source.
+
+## Dataverse, when the process starts on the platform
+
+Use it if the app is where the record is created, permissions follow a person's role, and the relationships belong to the process (request, approval, status). Dataverse already understands security, auditing, and solutions. ALM travels with the table.
+
+## SQL Server, when the data is already there
+
+Use it if the master record lives in SQL, especially on-premises, and other applications already use it. Power Apps can read it and write what the process needs, through a gateway when the server is not exposed to the internet. Copying the whole database into Dataverse just to "have it in the cloud" duplicates the data and the reconciliation.
+
+<Callout title="The gateway does not model the business">
+The gateway opens the path to the server. It does not decide which table is the source or who can see a row. That is still design.
+</Callout>
+
+## A mix that often works
+
+- The master stays in SQL.
+- Dataverse keeps the process file: who asked, which status it is in, which approval is missing.
+- One column stores the SQL record's key, not a copy of every column.
+
+## Before you choose
+
+Ask who fixes a value if the two copies disagree. If nobody owns that answer, it is too early to duplicate.

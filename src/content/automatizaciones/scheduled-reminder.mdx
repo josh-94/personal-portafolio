@@ -1,0 +1,25 @@
+---
+title: Scheduled reminder
+summary: A flow that checks due dates on a fixed schedule and notifies only what is still open.
+date: 2026-10-08
+tags:
+  - power-automate
+level: basico
+technologies:
+  - power-automate
+lang: en
+translationKey: scheduled-reminder
+draft: false
+trigger: A daily recurrence, on the operation's clock.
+connectors:
+  - Schedule
+  - Dataverse, SharePoint, or SQL, depending on where the due date lives
+seoTitle: Scheduled reminder
+seoDescription: A recurrence pattern to notify open due items.
+---
+
+Reference pattern. It does not describe a client.
+
+The trigger is a schedule, not a click. Each run filters records that are due and still open. The notice goes out once per record. If the flow does not mark that it already notified, the next day it sends the mail again.
+
+Keep the last run and the number of notices. If the flow fails on Monday, Tuesday shows it.

@@ -1,0 +1,24 @@
+---
+title: SharePoint as a file repository
+summary: SharePoint keeps the document. Another system keeps the status of the transaction.
+date: 2026-10-08
+tags:
+  - sharepoint
+level: basico
+technologies:
+  - sharepoint
+lang: en
+translationKey: sharepoint-repository
+draft: false
+systems:
+  - SharePoint
+  - Dataverse or SQL
+seoTitle: SharePoint as a file repository
+seoDescription: A pattern for using SharePoint as a file repository rather than the system of record.
+---
+
+Reference pattern. It does not describe a client.
+
+SharePoint is a good place for the file: versions, library permissions, and a stable link. It gets awkward when the list also tries to be the case file, the board, and the audit of the process.
+
+Leave the document and its link in the library. Leave status, owner, and date in Dataverse, or in the SQL system that already owns them. The flow [from a SharePoint item to a Dataverse row](/en/automations/sharepoint-to-dataverse) shows that split.

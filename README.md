@@ -1,69 +1,65 @@
-# Getting Started with Create React App Portfolio
+# Josh — portafolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sitio de Jeshua Cabanillas Blanco. Español en `/` e inglés en `/en`. El contenido largo vive en Markdown, en `src/content`.
 
-## Available Scripts
+## Local
 
-In the project directory, you can run:
+```bash
+npm install
+npm run dev
+```
 
-### `npm start`
+El build de producción, el que usa Netlify, es:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run build
+npm run preview
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`npm run build` genera `out/` con Next.js y después el índice de búsqueda con Pagefind. La búsqueda en `npm run dev` avisa que el índice todavía no existe.
 
-### `npm test`
+## Publicar una pieza
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Copia `src/content/_plantilla.mdx` a la colección: `blog`, `guias`, `casos`, `automatizaciones` o `integraciones`.
+2. El nombre del archivo es el slug. `translationKey` es el mismo en español y en inglés.
+3. Completa título, resumen, fecha, etiquetas, nivel, tecnologías e idioma.
+4. En un caso, llena problema y enfoque solo con hechos. Si no hay resultado, deja `outcome` vacío y anota el hueco en `gaps`.
+5. No crees la versión en inglés hasta que el texto exista. Una página inglesa vacía no se publica.
+6. Deja `draft: true` hasta cerrar el texto. Pasa a `false` para incluirla en el sitio, el RSS y el sitemap.
 
-### `npm run build`
+## Calendario inicial
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ideas, no fechas comprometidas. Conviene dos piezas al mes, primero en español.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Cómo ordenar DEV, TEST y PROD con Power Platform Pipelines. Ya hay una guía.
+2. Dataverse o SQL Server. Ya hay una guía.
+3. Qué resuelve un gateway on-premises y qué queda fuera.
+4. Patrón de aprobación que operaciones puede seguir.
+5. El costo de editar en PROD.
+6. Conector o HTTP cuando el sistema no tiene conector.
+7. SharePoint como archivo y Dataverse como sistema de registro.
+8. Cómo documentar un flujo. Ya hay una nota.
+9. Estructura de pantallas de una canvas app de mesa de control.
+10. Checklist para TI antes de integrar un SQL on-premises.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Netlify
 
-### `npm run eject`
+El dominio `codewithjosh.codes` sigue en el sitio actual de Netlify. `netlify.toml` fija:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- comando: `npm run build`
+- carpeta: `out`
+- Node 22
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+En el panel, la carpeta publicada tiene que ser `out`, no `dist` ni `build`. Si existe una regla que envía todo a `/index.html`, quítala: cada ruta tiene su HTML.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+El formulario de contacto se llama `contact` y lo recibe Netlify Forms. Configura ahí el correo de aviso. No hay servidor Express ni claves en el repositorio.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Secretos
 
-## Scripts to Deploy on Remote Server using Nginx and installing a SSL certificate
-### Previouly configure your shh public key local machine into remote server
-https://developers.redhat.com/blog/2018/11/02/how-to-manually-copy-ssh-keys-rhel![image]
+Había un `.env` en el historial del repo, usado por el servidor de correo anterior. Ya no está en el árbol de trabajo y `.gitignore` lo excluye. Rota la clave de aplicación de Gmail: el archivo llegó a estar en el remoto. No reescribo el historial de git desde aquí.
 
-### Configure your DNS cname record
+Los scripts `deploy.sh`, `1.configNewServer.sh`, `2.configNgnix.sh` y `3.configSSL.sh` son de un Nginx antiguo. El sitio nuevo no los usa.
 
-An A record with `example.com` pointing to your server’s public IP address.
-An A record with `www.example.com` pointing to your server’s public IP address.
+## Marca
 
-Git clone the following repository on local machine
-### `.git clone https://github.com/josh-94/personal-portafolio.git`
-
-## Send configuration files to remote server
-### `chmod +x sendConfigFilestoServer.sh`
-### `./sendConfigFilestoServer.sh`
-
-Login as root user in the remote server an execute the following script to create a new user 'ubuntu'
-### `chmod +x 1.configNewServer.sh 2.configNgnix.sh 3.configSSL.sh deploy.sh`
-### `./1.configNewServer.sh`
-
-Logout as root user and login as new user 'ubuntu' in the remote server, then execute the following scripts to configure Nginx and add a SSL certificate
-### `2.configNgnix.sh`
-
-On local machine, deploy the project executable file
-### `deploy.sh`
-
-Finally install SSL certificate on server
-### `3.configSSL.sh`
+Las reglas del logo están en `public/brand/USO.md`. `npm run brand` regenera los SVG y los PNG. El nodo del isotipo es verde. El nombre del sitio en el título y en Open Graph es codewithjosh.

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Josh — Power Platform</title>
+    <link>https://codewithjosh.codes/en</link>
+    <description>Articles, guides, cases, and patterns by Jeshua Cabanillas Blanco.</description>
+    <language>en</language>
+    <item>
+      <title>Commercial orders</title>
+      <link>https://codewithjosh.codes/en/cases/commercial-orders</link>
+      <guid>https://codewithjosh.codes/en/cases/commercial-orders</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A product catalog with search, plus a view to follow contacts, orders, and client history.</description>
+    </item>
+    <item>
+      <title>Picking sheet</title>
+      <link>https://codewithjosh.codes/en/cases/picking-sheet</link>
+      <guid>https://codewithjosh.codes/en/cases/picking-sheet</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A warehouse solution to follow orders, pick items, and see delivery status.</description>
+    </item>
+    <item>
+      <title>Quotations system</title>
+      <link>https://codewithjosh.codes/en/cases/quotations</link>
+      <guid>https://codewithjosh.codes/en/cases/quotations</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A platform to prepare quotes, keep clients, and organize pricing in one path.</description>
+    </item>
+    <item>
+      <title>RUMBO</title>
+      <link>https://codewithjosh.codes/en/cases/rumbo-en</link>
+      <guid>https://codewithjosh.codes/en/cases/rumbo-en</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>His own web app, live at mi.apprumbo.online and built with AI as a development tool.</description>
+    </item>
+    <item>
+      <title>Vacation manager</title>
+      <link>https://codewithjosh.codes/en/cases/vacation-manager</link>
+      <guid>https://codewithjosh.codes/en/cases/vacation-manager</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A Power Apps solution to request time off, route the approval, and see the team calendar.</description>
+    </item>
+    <item>
+      <title>Request approval</title>
+      <link>https://codewithjosh.codes/en/automations/approval-request</link>
+      <guid>https://codewithjosh.codes/en/automations/approval-request</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A pattern for a request to leave the app, wait for a decision, and come back with a visible status.</description>
+    </item>
+    <item>
+      <title>Scheduled reminder</title>
+      <link>https://codewithjosh.codes/en/automations/scheduled-reminder</link>
+      <guid>https://codewithjosh.codes/en/automations/scheduled-reminder</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A flow that checks due dates on a fixed schedule and notifies only what is still open.</description>
+    </item>
+    <item>
+      <title>From a SharePoint item to a Dataverse row</title>
+      <link>https://codewithjosh.codes/en/automations/sharepoint-to-dataverse</link>
+      <guid>https://codewithjosh.codes/en/automations/sharepoint-to-dataverse</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>When a file or item lands in a library and the process needs its own record.</description>
+    </item>
+    <item>
+      <title>Dataverse as the system of record</title>
+      <link>https://codewithjosh.codes/en/integrations/dataverse-system-of-record</link>
+      <guid>https://codewithjosh.codes/en/integrations/dataverse-system-of-record</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>When the process row is born in Dataverse and other apps look up that row.</description>
+    </item>
+    <item>
+      <title>HTTP when there is no connector</title>
+      <link>https://codewithjosh.codes/en/integrations/http-without-connector</link>
+      <guid>https://codewithjosh.codes/en/integrations/http-without-connector</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>How to talk to a system that has no connector, without building one before you know the contract.</description>
+    </item>
+    <item>
+      <title>SharePoint as a file repository</title>
+      <link>https://codewithjosh.codes/en/integrations/sharepoint-repository</link>
+      <guid>https://codewithjosh.codes/en/integrations/sharepoint-repository</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>SharePoint keeps the document. Another system keeps the status of the transaction.</description>
+    </item>
+    <item>
+      <title>On-premises SQL Server with a gateway</title>
+      <link>https://codewithjosh.codes/en/integrations/sql-with-gateway</link>
+      <guid>https://codewithjosh.codes/en/integrations/sql-with-gateway</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>How to reach a SQL Server that is not on the internet, without moving it to the cloud just to read it.</description>
+    </item>
+    <item>
+      <title>Dataverse or SQL Server</title>
+      <link>https://codewithjosh.codes/en/guides/dataverse-or-sql-server</link>
+      <guid>https://codewithjosh.codes/en/guides/dataverse-or-sql-server</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+      <description>When new data belongs in Dataverse, and when it should stay in the SQL Server the company already runs.</description>
+    </item>
+    <item>
+      <title>How to line up DEV, TEST, and PROD with Power Platform Pipelines</title>
+      <link>https://codewithjosh.codes/en/guides/power-platform-pipelines</link>
+      <guid>https://codewithjosh.codes/en/guides/power-platform-pipelines</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A short path so a solution leaves development, gets tested, and reaches production without being edited there.</description>
+    </item>
+  </channel>
+</rss>

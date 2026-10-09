@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Josh — Power Platform</title>
+    <link>https://codewithjosh.codes/</link>
+    <description>Artículos, manuales, casos y patrones de Jeshua Cabanillas Blanco.</description>
+    <language>es-pe</language>
+    <item>
+      <title>Cómo documentar un flujo para que otra persona lo mantenga</title>
+      <link>https://codewithjosh.codes/blog/documentar-un-flujo</link>
+      <guid>https://codewithjosh.codes/blog/documentar-un-flujo</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Una ficha corta que dice qué dispara el flujo, qué conexiones usa y qué hacer cuando falla.</description>
+    </item>
+    <item>
+      <title>Gestor de vacaciones</title>
+      <link>https://codewithjosh.codes/casos/gestor-de-vacaciones</link>
+      <guid>https://codewithjosh.codes/casos/gestor-de-vacaciones</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Aplicación de Power Apps para pedir una ausencia, recorrer la aprobación y ver el calendario del equipo.</description>
+    </item>
+    <item>
+      <title>Hoja de picking</title>
+      <link>https://codewithjosh.codes/casos/hoja-de-picking</link>
+      <guid>https://codewithjosh.codes/casos/hoja-de-picking</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Solución de almacén para seguir pedidos, elegir ítems y ver el estado de entrega.</description>
+    </item>
+    <item>
+      <title>Pedidos comerciales</title>
+      <link>https://codewithjosh.codes/casos/pedidos-comerciales</link>
+      <guid>https://codewithjosh.codes/casos/pedidos-comerciales</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Catálogo de productos con búsqueda y una vista para seguir contactos, pedidos y el historial con el cliente.</description>
+    </item>
+    <item>
+      <title>RUMBO</title>
+      <link>https://codewithjosh.codes/casos/rumbo</link>
+      <guid>https://codewithjosh.codes/casos/rumbo</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Aplicación web propia, publicada en mi.apprumbo.online y construida con apoyo de IA.</description>
+    </item>
+    <item>
+      <title>Sistema de cotizaciones</title>
+      <link>https://codewithjosh.codes/casos/sistema-de-cotizaciones</link>
+      <guid>https://codewithjosh.codes/casos/sistema-de-cotizaciones</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Plataforma para armar cotizaciones, llevar clientes y ordenar precios en un solo recorrido.</description>
+    </item>
+    <item>
+      <title>Aprobación de una solicitud</title>
+      <link>https://codewithjosh.codes/automatizaciones/aprobacion-de-solicitud</link>
+      <guid>https://codewithjosh.codes/automatizaciones/aprobacion-de-solicitud</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Patrón para que una solicitud salga de la aplicación, espere una decisión y vuelva con un estado visible.</description>
+    </item>
+    <item>
+      <title>Recordatorio programado</title>
+      <link>https://codewithjosh.codes/automatizaciones/recordatorio-programado</link>
+      <guid>https://codewithjosh.codes/automatizaciones/recordatorio-programado</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Un flujo que revisa vencimientos en horario fijo y avisa solo lo que sigue abierto.</description>
+    </item>
+    <item>
+      <title>De un ítem de SharePoint a una fila en Dataverse</title>
+      <link>https://codewithjosh.codes/automatizaciones/sharepoint-a-dataverse</link>
+      <guid>https://codewithjosh.codes/automatizaciones/sharepoint-a-dataverse</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cuando un archivo o un ítem llega a una biblioteca y el proceso necesita un registro propio.</description>
+    </item>
+    <item>
+      <title>Dataverse como sistema de registro</title>
+      <link>https://codewithjosh.codes/integraciones/dataverse-sistema-de-registro</link>
+      <guid>https://codewithjosh.codes/integraciones/dataverse-sistema-de-registro</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cuándo la fila del proceso nace en Dataverse y las demás aplicaciones consultan esa fila.</description>
+    </item>
+    <item>
+      <title>HTTP cuando no hay conector</title>
+      <link>https://codewithjosh.codes/integraciones/http-sin-conector</link>
+      <guid>https://codewithjosh.codes/integraciones/http-sin-conector</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cómo hablar con un sistema que no tiene conector, sin inventar uno antes de saber el contrato.</description>
+    </item>
+    <item>
+      <title>SharePoint como repositorio de archivos</title>
+      <link>https://codewithjosh.codes/integraciones/sharepoint-repositorio</link>
+      <guid>https://codewithjosh.codes/integraciones/sharepoint-repositorio</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>SharePoint guarda el documento. Otro sistema guarda el estado del trámite.</description>
+    </item>
+    <item>
+      <title>SQL Server on-premises con gateway</title>
+      <link>https://codewithjosh.codes/integraciones/sql-con-gateway</link>
+      <guid>https://codewithjosh.codes/integraciones/sql-con-gateway</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cómo llegar a un SQL que no está en internet, sin mudarlo a la nube para poder leerlo.</description>
+    </item>
+    <item>
+      <title>Dataverse o SQL Server</title>
+      <link>https://codewithjosh.codes/guias/dataverse-o-sql-server</link>
+      <guid>https://codewithjosh.codes/guias/dataverse-o-sql-server</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cuándo el dato nuevo vive en Dataverse y cuándo conviene dejarlo en el SQL que la empresa ya opera.</description>
+    </item>
+    <item>
+      <title>Cómo ordenar DEV, TEST y PROD con Power Platform Pipelines</title>
+      <link>https://codewithjosh.codes/guias/pipelines-dev-test-prod</link>
+      <guid>https://codewithjosh.codes/guias/pipelines-dev-test-prod</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Un camino corto para que una solución salga de desarrollo, se pruebe y llegue a producción sin editarse ahí.</description>
+    </item>
+  </channel>
+</rss>

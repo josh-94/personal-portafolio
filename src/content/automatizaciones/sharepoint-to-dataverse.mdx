@@ -1,0 +1,28 @@
+---
+title: From a SharePoint item to a Dataverse row
+summary: When a file or item lands in a library and the process needs its own record.
+date: 2026-10-08
+tags:
+  - sharepoint
+  - dataverse
+level: intermedio
+technologies:
+  - sharepoint
+  - dataverse
+  - power-automate
+lang: en
+translationKey: sharepoint-to-dataverse
+draft: false
+trigger: When a SharePoint item is created or modified.
+connectors:
+  - SharePoint
+  - Dataverse
+seoTitle: From SharePoint to Dataverse
+seoDescription: A pattern to create a Dataverse row when a SharePoint item arrives.
+---
+
+Reference pattern. It does not describe a client.
+
+SharePoint keeps the file. Dataverse keeps the case file: status, owner, due date. The flow creates the row if it does not exist and updates the item key if it does. The key is the item id, not the file name, because the name changes.
+
+Do not copy every column. Copy the ones the process looks up. The file still opens from SharePoint.

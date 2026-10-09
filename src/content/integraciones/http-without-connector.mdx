@@ -1,0 +1,27 @@
+---
+title: HTTP when there is no connector
+summary: How to talk to a system that has no connector, without building one before you know the contract.
+date: 2026-10-08
+tags:
+  - http
+level: avanzado
+technologies:
+  - http
+  - power-automate
+lang: en
+translationKey: http-connector
+draft: false
+systems:
+  - HTTP API
+  - Power Automate
+seoTitle: HTTP when there is no connector
+seoDescription: A pattern for HTTP integration when the system has no Power Platform connector.
+---
+
+Reference pattern. It does not describe a client.
+
+If a standard connector exists and covers the operation, use it. HTTP is for when the system exposes an API and there is no connector, or the connector misses the method the process needs.
+
+Ask IT for the contract: URL per environment, authentication, a sample response, and the error when the data does not exist. Store the URL in an environment variable. Do not hard-code it in the flow.
+
+A custom connector is worth it when more than one flow will call the same API. For a single call, the HTTP action is enough, as long as the secret never lands in the repo or in a screenshot.

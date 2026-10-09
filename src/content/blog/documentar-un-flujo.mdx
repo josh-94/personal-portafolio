@@ -1,0 +1,47 @@
+---
+title: Cómo documentar un flujo para que otra persona lo mantenga
+summary: Una ficha corta que dice qué dispara el flujo, qué conexiones usa y qué hacer cuando falla.
+date: 2026-10-08
+tags:
+  - power-automate
+  - alm
+level: basico
+technologies:
+  - power-automate
+lang: es
+translationKey: document-a-flow
+draft: false
+seoTitle: Documentar un flujo de Power Automate
+seoDescription: Qué anotar para que otra persona pueda mantener un flujo de Power Automate.
+---
+
+Un flujo sin dueño se rompe en silencio. La documentación no es un manual largo. Es una ficha que otra persona puede leer antes de abrirlo.
+
+## La ficha
+
+```text
+Nombre:
+Entorno:
+Dueño:
+Disparador:
+Conexiones:
+Qué hace en una frase:
+Qué no hace:
+Si falla:
+```
+
+El nombre del flujo en Power Automate debe parecerse al de la ficha. “Flujo1” no le sirve a quien entra de guardia.
+
+## Disparador y alcance
+
+Escribe si arranca por un botón, por un registro, por un correo o por un horario. Anota el entorno. Un flujo de DEV que apunta a una lista de PROD es un accidente esperando hora.
+
+## Conexiones
+
+Anota la cuenta o la referencia de conexión, no la contraseña. Si la conexión es de una persona que puede irse, el flujo necesita un dueño de equipo antes de promoverse.
+
+## Cuando falla
+
+Una línea basta: a quién avisa, si reintenta y si deja el registro en un estado visible. Si el flujo no deja rastro, la operación no puede saber que se detuvo.
+
+Esta nota no describe un flujo de un cliente. Es el patrón de documentación de esta guía.

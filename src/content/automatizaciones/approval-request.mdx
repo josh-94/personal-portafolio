@@ -1,0 +1,29 @@
+---
+title: Request approval
+summary: A pattern for a request to leave the app, wait for a decision, and come back with a visible status.
+date: 2026-10-08
+tags:
+  - aprobaciones
+  - power-automate
+level: intermedio
+technologies:
+  - power-apps
+  - power-automate
+lang: en
+translationKey: approval-request
+draft: false
+trigger: When a request is created or submitted.
+connectors:
+  - Approvals
+  - Dataverse or the source where the request lives
+seoTitle: Approval pattern
+seoDescription: A Power Automate pattern to approve a request and keep the status visible.
+---
+
+Reference pattern. It does not describe a client.
+
+The app creates the request as Pending. The flow starts from that record, sends an approval, and writes the result back: Approved or Rejected, with the date and the comment. The person who asked does not have to chase the status by mail.
+
+If the approver does not act, the flow should not stay silent. A reminder or a visible due state avoids the eternal request.
+
+Before you promote it, the approvals connection has to be an environment reference, not the personal account of the person who designed the flow.

@@ -1,0 +1,28 @@
+---
+title: De un ítem de SharePoint a una fila en Dataverse
+summary: Cuando un archivo o un ítem llega a una biblioteca y el proceso necesita un registro propio.
+date: 2026-10-08
+tags:
+  - sharepoint
+  - dataverse
+level: intermedio
+technologies:
+  - sharepoint
+  - dataverse
+  - power-automate
+lang: es
+translationKey: sharepoint-to-dataverse
+draft: false
+trigger: Cuando se crea o se modifica un ítem en SharePoint.
+connectors:
+  - SharePoint
+  - Dataverse
+seoTitle: De SharePoint a Dataverse
+seoDescription: Patrón para crear una fila en Dataverse cuando llega un ítem de SharePoint.
+---
+
+Patrón de referencia. No describe un cliente.
+
+SharePoint guarda el archivo. Dataverse guarda el expediente: estado, responsable, vencimiento. El flujo crea la fila si no existe y actualiza la clave del ítem si ya existe. La clave es el id del ítem, no el nombre del archivo, porque el nombre cambia.
+
+No copies todas las columnas. Copia las que el proceso consulta. El archivo sigue abriéndose desde SharePoint.

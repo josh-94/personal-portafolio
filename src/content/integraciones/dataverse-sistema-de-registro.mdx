@@ -1,0 +1,24 @@
+---
+title: Dataverse como sistema de registro
+summary: Cuándo la fila del proceso nace en Dataverse y las demás aplicaciones consultan esa fila.
+date: 2026-10-08
+tags:
+  - dataverse
+level: intermedio
+technologies:
+  - dataverse
+lang: es
+translationKey: dataverse-record
+draft: false
+systems:
+  - Dataverse
+  - Power Apps
+seoTitle: Dataverse como sistema de registro
+seoDescription: Patrón para usar Dataverse como sistema de registro de un proceso.
+---
+
+Patrón de referencia. No describe un cliente.
+
+Úsalo cuando el proceso no tiene un maestro previo: la solicitud, el expediente o el estado nacen en la aplicación. Los roles de seguridad de Dataverse definen quién ve y quién aprueba. La tabla viaja en la solución, así que DEV, TEST y PROD comparten el modelo.
+
+No lo uses para clonar un core que ya tiene dueño. En ese caso el enlace guarda la clave externa y Dataverse guarda solo el trámite.

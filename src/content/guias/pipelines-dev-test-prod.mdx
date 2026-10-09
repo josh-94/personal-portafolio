@@ -1,0 +1,46 @@
+---
+title: Cómo ordenar DEV, TEST y PROD con Power Platform Pipelines
+summary: Un camino corto para que una solución salga de desarrollo, se pruebe y llegue a producción sin editarse ahí.
+date: 2026-10-01
+tags:
+  - alm
+level: intermedio
+technologies:
+  - alm
+lang: es
+translationKey: pipelines
+draft: false
+seoTitle: DEV, TEST y PROD con Power Platform Pipelines
+seoDescription: Guía para mover soluciones de Power Platform por DEV, TEST y PROD.
+---
+
+import Callout from '../../components/Callout.astro';
+
+Una solución que solo existe en el entorno donde se construyó se vuelve frágil el día que alguien la corrige en producción. Power Platform Pipelines sirve para mover esa solución por tres entornos con un registro de lo que se publicó.
+
+## Tres entornos, tres trabajos
+
+- **DEV.** Se construye. La solución puede ir no administrada, para seguir cambiando componentes.
+- **TEST.** Se valida con quien opera el proceso. Aquí entra la solución administrada.
+- **PROD.** Se usa. No es el lugar para rediseñar la pantalla.
+
+<Callout title="El límite">
+El pipeline mueve la solución. No reemplaza la conversación con el usuario ni la prueba del flujo con datos parecidos a los reales.
+</Callout>
+
+## Antes del primer despliegue
+
+1. Un publicador y un prefijo propios, para reconocer los componentes.
+2. Variables de entorno para lo que cambia entre DEV y PROD: URLs, listas, correos de notificación.
+3. Referencias de conexión, para que el flujo no quede amarrado a la cuenta de quien lo creó.
+4. Una solución que contenga la aplicación, el flujo y las tablas que viajan juntas. Lo que no debe promoverse, se queda fuera.
+
+## Al promover
+
+Instala la solución administrada en TEST. Prueba el camino completo: alta, aprobación, error y permiso de quien no es el maker. Si TEST se sostiene, el mismo paquete sigue a PROD.
+
+Si algo falla en PROD, el arreglo vuelve a DEV y recorre el pipeline otra vez. Editar el componente en PROD rompe la próxima promoción.
+
+## Qué anotar
+
+Entorno, versión de la solución, fecha y qué se probó. Con eso otra persona puede saber qué está en producción sin abrir el diseñador.

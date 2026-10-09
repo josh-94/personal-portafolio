@@ -1,0 +1,21 @@
+{
+  "name": "codewithjosh",
+  "short_name": "codewithjosh",
+  "lang": "es",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0B1F3A",
+  "theme_color": "#0B1F3A",
+  "icons": [
+    {
+      "src": "/brand/apple-touch.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/brand/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

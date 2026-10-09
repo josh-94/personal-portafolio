@@ -1,0 +1,27 @@
+---
+title: HTTP cuando no hay conector
+summary: Cómo hablar con un sistema que no tiene conector, sin inventar uno antes de saber el contrato.
+date: 2026-10-08
+tags:
+  - http
+level: avanzado
+technologies:
+  - http
+  - power-automate
+lang: es
+translationKey: http-connector
+draft: false
+systems:
+  - API HTTP
+  - Power Automate
+seoTitle: HTTP cuando no hay conector
+seoDescription: Patrón para integrar por HTTP cuando el sistema no tiene conector de Power Platform.
+---
+
+Patrón de referencia. No describe un cliente.
+
+Si existe un conector estándar y cubre la operación, úsalo. El HTTP entra cuando el sistema expone una API y no hay conector, o cuando el conector no cubre el método que el proceso necesita.
+
+Pide a TI el contrato: URL por entorno, autenticación, un ejemplo de respuesta y qué error devuelve si el dato no existe. Guarda la URL en una variable de entorno. No la dejes escrita en el flujo.
+
+Un conector personalizado vale la pena cuando más de un flujo va a llamar la misma API. Para una sola llamada, la acción HTTP alcanza, siempre que el secreto no quede en el repositorio ni en una captura.

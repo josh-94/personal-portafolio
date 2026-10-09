@@ -1,0 +1,29 @@
+---
+title: Aprobación de una solicitud
+summary: Patrón para que una solicitud salga de la aplicación, espere una decisión y vuelva con un estado visible.
+date: 2026-10-08
+tags:
+  - aprobaciones
+  - power-automate
+level: intermedio
+technologies:
+  - power-apps
+  - power-automate
+lang: es
+translationKey: approval-request
+draft: false
+trigger: Cuando se crea o se envía una solicitud.
+connectors:
+  - Approvals
+  - Dataverse o el origen donde vive la solicitud
+seoTitle: Patrón de aprobación
+seoDescription: Patrón de Power Automate para aprobar una solicitud y dejar el estado visible.
+---
+
+Patrón de referencia. No describe un cliente.
+
+La aplicación crea la solicitud en estado Pendiente. El flujo arranca con ese registro, envía una aprobación y escribe el resultado en el mismo registro: Aprobada o Rechazada, con la fecha y el comentario. La persona que pidió no tiene que preguntar por correo en qué quedó.
+
+Si el aprobador no actúa, el flujo no debe quedar mudo. Un recordatorio o un vencimiento visible evita la solicitud eterna.
+
+Antes de promoverlo, la conexión de aprobaciones tiene que ser una referencia del entorno, no la cuenta personal de quien diseñó el flujo.
